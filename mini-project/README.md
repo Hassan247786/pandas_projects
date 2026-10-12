@@ -1,3 +1,7 @@
+### How to Run 
+
+The data used in the analysis is attached to this repository. Save the files, edit the code with your own file paths and run to reproduce the entire analysis.
+
 ### Purpose
 
 - This analysis serves as practice for using the pandas library in Python.
