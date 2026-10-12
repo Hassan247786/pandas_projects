@@ -1,6 +1,6 @@
 ### How to Run 
 
-The data used in the analysis is attached to this repository. Save the files, edit the code with your own file paths and run to reproduce the entire analysis.
+The data used in the analysis can be found here https://drive.google.com/drive/folders/17nJsPJtvwrlYMIVo4NV-Pf0_4o1T_ytD?usp=sharing. Download each of the two datasets, edit the code with your own file paths and run to reproduce the entire analysis. 
 
 ### Purpose
 
