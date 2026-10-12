@@ -1,10 +1,12 @@
 import pandas as pd
 
+file_path_1 = "E:/All my projects/Pandas/main_projects/2020_sharing_data_outside.csv"
+file_path_2 = "E:/All my projects/Pandas/main_projects/so_2021_survey_results.csv"
 # read in the files 
-python_survey_df = (pd.read_csv("E:/Syllabus/pandas_practise/2020_sharing_data_outside.csv", 
+python_survey_df = (pd.read_csv(file_path_1, 
                     low_memory=False))  # pandas is free to use more memory to allocate dtypes
-stack_overflow_df = pd.read_csv("E:/Syllabus/pandas_practise/so_2021_survey_results.csv", low_memory=False)
-oecd_countries_df = (pd.read_csv("E:/Syllabus/pandas_practise/oecd_locations.csv", 
+stack_overflow_df = pd.read_csv(file_path_2, low_memory=False)
+oecd_countries_df = (pd.read_csv("E:/All my projects/Pandas/main_projects/oecd_locations.csv", 
                     header=None, names=["abbreviation", "Country"])
                      .set_index("Country")) #index to be used later for a join
 
@@ -104,24 +106,24 @@ proportions_survey_two = ((stack_overflow_df["experience"]
 
 def print_statements():
     """Print all summary statistics computed from the two surveys."""
-    print("\nThe top 10 most popular IDE'S -")
+    print("/nThe top 10 most popular IDE'S -")
     print(most_popular_ides)
-    print("\nThe top 10 most popular programming languages -")
+    print("/nThe top 10 most popular programming languages -")
     print(most_popular_languages)
-    print("\nThe 10 most common countries of the people that took the survey - ")
+    print("/nThe 10 most common countries of the people that took the survey - ")
     print(ten_most_common_countries_survey_takers)
-    print("\nCountry with the greatest number of Python developers with 11+ years of experience - ")
+    print("/nCountry with the greatest number of Python developers with 11+ years of experience - ")
     print(country_with_highest_python_exp)
-    print("\nCountry with the highest PROPORTION (%) of developers with 11+ years of experience ")
+    print("/nCountry with the highest PROPORTION (%) of developers with 11+ years of experience ")
     print(proportion)
-    print("\nThe average annual compensation for each type of type of employment - ")
+    print("/nThe average annual compensation for each type of type of employment - ")
     print(average_salary_by_employment_type)
-    print("\nCountry with the highest associate degree earners on average - ")
+    print("/nCountry with the highest associate degree earners on average - ")
     print(top_associate_country, top_associate_salary)
-    print("\nCountry with the highest doctoral degree earners on average - ")
+    print("/nCountry with the highest doctoral degree earners on average - ")
     print(top_phd_country, top_phd_salary)
-    print("\nProportions (%) of Python developers with specific level of experience (Python Survey) - ")
+    print("/nProportions (%) of Python developers with specific level of experience (Python Survey) - ")
     print(proportion_of_developers_years_of_experience) 
-    print("\nProportions (%) of Python developers with specific level of experience (Stack Overflow Survey) - ")
-    print(f"{proportions_survey_two}\n")
+    print("/nProportions (%) of Python developers with specific level of experience (Stack Overflow Survey) - ")
+    print(f"{proportions_survey_two}/n")
 print_statements()
