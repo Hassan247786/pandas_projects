@@ -1,5 +1,9 @@
 ## Higher Education Data Analysis — Notes
 
+### How to Run 
+
+The data used in the analysis is attached to this repository. Save the files, edit the code with your file paths and run to reproduce the entire analysis.
+
 ### Part 1 — Correlation Between Admission Rates and Tuition Fees
 
 - Universities with 100% acceptance rates generally have much lower tuition fees.
